@@ -6,4 +6,11 @@ a new project skeleton creation utility for multiple languages
 ```bash
 $ newproject foobar
 ```
-
+```bash
+  ./foobar
+  ./foobar/build
+  ./foobar/include
+  ./foobar/src
+  ./foobar/src/main.cpp
+  ./foobar/Makefile
+```
