@@ -2,7 +2,7 @@
 BUILD_DIR = build
 
 #OBJS specifies which files to compile as part of the project
-OBJS = src/main.cpp src/main2.cpp
+OBJS = src/main.cpp
 
 #CC specifies which compiler we're using
 CC = g++
@@ -35,4 +35,3 @@ run :
 
 # objs :
 # 	g++ -x c -o misc/main.o -c src/main.cpp
-# 	g++ -x c -o misc/main2.o -c src/main2.cpp

@@ -28,10 +28,13 @@ makeproject() {
             if [ "$4" = "glfw" ]
             then
                 mkdir $1
-                cp -R $SOURCE_DIR/haskell/opengl/glfw/* `pwd`/$1/
+                cp -R $SOURCE_DIR/haskell/opengl/glfw/*           `pwd`/$1/
+                cp -R $SOURCE_DIR/haskell/opengl/glfw/.gitignore  `pwd`/$1/
+                cp -R $SOURCE_DIR/haskell/opengl/glfw/.stack-work `pwd`/$1/
                 cd `pwd`/$1/
                 sed -i 's/#ETALPMET#/'$1'/g' README.md
                 sed -i 's/#ETALPMET#/'$1'/g' ETALPMET.cabal
+                sed -i 's/#ETALPMET#/'$1'/g' run.sh
                 mv ETALPMET.cabal $1.cabal
             else
                 echo "ERROR: no template version specified or found"

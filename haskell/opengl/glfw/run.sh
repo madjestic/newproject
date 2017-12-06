@@ -1,3 +1,3 @@
 #!/bin/sh
 
-stack exec Transformations
+stack exec #ETALPMET#
